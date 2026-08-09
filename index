@@ -4,18 +4,356 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CONVOKAMOS A TODAS LAS AGUAS</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    .bloque {
+      border-top: 1px solid #000;
+      padding: 20px 0;
+      cursor: pointer;
+    }
+
+    .titulo {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+
+    .contenido {
+      display: none;
+      padding: 25px 0 10px;
+      max-width: 700px;
+    }
+
+    .bloque.abierto .contenido {
+      display: block;
+    }
+
+    .signo {
+      font-size: 24px;
+    }
+
+    .referente {
+      border-top: 1px solid #aaa;
+      padding: 15px 0;
+      cursor: pointer;
+    }
+
+    .referente-contenido {
+      display: none;
+      padding: 15px 0;
+    }
+
+    .referente.abierto .referente-contenido {
+      display: block;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: white;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
 
+<main>
+
   <h1>CONVOKAMOS A TODAS LAS AGUAS</h1>
 
-  <p>BASTA!</p>
+  <p><strong>BASTA!</strong></p>
 
   <p>
-    Nos anticipamos a la vuelta a DIPUTADOS
-    del proyecto de ley de EXTRANJERIZACIÓN.
+    Ríos, mares y tormentas;<br>
+    pus, mocos y eyaculaciones;<br>
+    sangre, baba y meos.
   </p>
+
+  <p>
+    Nos anticipamos a la vuelta a
+    <span class="desplegable">DIPUTADOS</span>
+    del proyecto de
+    <span class="desplegable">EXTRANJERIZACIÓN</span>.
+  </p>
+
+
+  <!-- DIPUTADOS -->
+
+  <section class="bloque">
+
+    <div class="titulo">
+      <span>DIPUTADOS</span>
+      <span class="signo">+</span>
+    </div>
+
+    <div class="contenido">
+
+      <p>
+        El proyecto vuelve a la Cámara de Diputados.
+        Acá vamos a explicar el escenario de votación,
+        la composición de los bloques y las mayorías.
+      </p>
+
+      <p><strong>MAYORÍA / BLOQUE POPULAR</strong></p>
+
+      <p>
+        Acá aparecerán los porcentajes y la composición
+        de cada bloque.
+      </p>
+
+      <p>
+        <strong>VER PARTIDOS →</strong>
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROYECTO -->
+
+  <section class="bloque">
+
+    <div class="titulo">
+      <span>PROYECTO DE EXTRANJERIZACIÓN</span>
+      <span class="signo">+</span>
+    </div>
+
+    <div class="contenido">
+
+      <p>
+        Acá explicamos brevemente qué está en juego,
+        qué propone el proyecto y qué modificaciones
+        introduce.
+      </p>
+
+      <p>
+        <strong>LEYES QUE MODIFICA →</strong>
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ACCIONES -->
+
+  <section class="bloque">
+
+    <div class="titulo">
+      <span>ACCIONES DIGITALES</span>
+      <span class="signo">+</span>
+    </div>
+
+    <div class="contenido">
+
+      <h2>PRESIÓN DIRECTA</h2>
+
+      <div class="bloque">
+        <div class="titulo">
+          <span>MAILÁTICA</span>
+          <span class="signo">+</span>
+        </div>
+
+        <div class="contenido">
+          <p>
+            No copies. Escribí.
+          </p>
+
+          <p>
+            Modelos, destinatarios y herramientas
+            para construir tu propio mensaje.
+          </p>
+
+          <p><strong>DESTINATARIOS →</strong></p>
+          <p><strong>MODELOS DE MAIL →</strong></p>
+          <p><strong>SUMAR UN MODELO →</strong></p>
+
+          <p>
+            RESPUESTAS RECIBIDAS:
+            <strong id="contador">0</strong>
+          </p>
+        </div>
+      </div>
+
+
+      <h2>DE INTERFERENCIA</h2>
+
+      <div class="bloque">
+
+        <div class="titulo">
+          <span>REFERENCIÁTICA</span>
+          <span class="signo">+</span>
+        </div>
+
+        <div class="contenido">
+
+          <p>
+            Interferir en los lugares donde se produce,
+            circula y legitima el discurso.
+          </p>
+
+          <div class="referente">
+
+            <strong>REFERENTE 01</strong>
+
+            <div class="referente-contenido">
+
+              <p><strong>NOMBRE / PERFIL</strong></p>
+              <p>Información del perfil.</p>
+
+              <p><strong>QUÉ HACE</strong></p>
+              <p>Actividad, medio, organización o cargo.</p>
+
+              <p><strong>POR QUÉ NOS IMPORTA</strong></p>
+              <p>Capacidad de incidencia.</p>
+
+              <p><strong>QUÉ LE PEDIMOS</strong></p>
+              <p>Demanda concreta.</p>
+
+              <p><strong>DÓNDE INTERPELARLO</strong></p>
+              <p>Instagram / X / YouTube / mail.</p>
+
+              <p><strong>QUÉ DIJO / QUÉ NO DIJO</strong></p>
+              <p>Registro de pronunciamientos.</p>
+
+            </div>
+
+          </div>
+
+          <div class="referente">
+            <strong>REFERENTE 02</strong>
+
+            <div class="referente-contenido">
+              <p>Ficha del referente.</p>
+            </div>
+          </div>
+
+          <button>+ SUMAR REFERENTE</button>
+
+        </div>
+
+      </div>
+
+
+      <h2>CREATIVAS</h2>
+
+      <div class="bloque">
+
+        <div class="titulo">
+          <span>RESERVORIO</span>
+          <span class="signo">+</span>
+        </div>
+
+        <div class="contenido">
+
+          <p>
+            Un reservorio de materiales para hacer
+            circular la inundación.
+          </p>
+
+          <p>PEGATINAS →</p>
+          <p>FLYERS →</p>
+          <p>PERFORMANCES →</p>
+          <p>OTROS MATERIALES →</p>
+
+          <button>+ SUMAR MATERIAL</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RASTRO -->
+
+  <section class="bloque">
+
+    <div class="titulo">
+      <span>RASTRO</span>
+      <span class="signo">+</span>
+    </div>
+
+    <div class="contenido">
+
+      <p>
+        Registro de respuestas, pronunciamientos,
+        compromisos y acciones realizadas.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<script>
+
+  const bloques = document.querySelectorAll(".bloque");
+
+  bloques.forEach(bloque => {
+
+    const titulo = bloque.querySelector(":scope > .titulo");
+
+    if (!titulo) return;
+
+    titulo.addEventListener("click", function(event) {
+
+      event.stopPropagation();
+
+      bloque.classList.toggle("abierto");
+
+      const signo = bloque.querySelector(":scope > .titulo .signo");
+
+      if (signo) {
+        signo.textContent =
+          bloque.classList.contains("abierto") ? "−" : "+";
+      }
+
+    });
+
+  });
+
+
+  const referentes = document.querySelectorAll(".referente");
+
+  referentes.forEach(referente => {
+
+    referente.addEventListener("click", function(event) {
+
+      event.stopPropagation();
+
+      referente.classList.toggle("abierto");
+
+    });
+
+  });
+
+</script>
 
 </body>
 </html>
